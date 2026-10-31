@@ -1,0 +1,9 @@
+# 录屏/临时文件
+*.log
+*.mp4
+*.mov
+.DS_Store
+Thumbs.db
+
+# 待补的素材（本地保留，不提交）
+draft/
