@@ -22,12 +22,14 @@
 
 | 模块 | 目录 | 负责人 | 说明 |
 |---|---|---|---|
-| 混合检索 / 拒答 / 分块 | `backend/rag/` | **本人** | 打分权重、阈值标定、缓存回放 |
-| 评测体系 | `backend/evaluation/` | **本人** | 数据集、指标、分层、冻结锁 |
-| CI | `.github/workflows/` | **本人** | 质量门禁 + 回放 job |
-| Agent 编排 | `backend/agents/` | 队友 | LangGraph 图、JSON 计划解析 |
-| 预测与数据引擎 | `backend/engine.py` | 队友 | 随机森林预测、告警、季节/相关性 |
-| 前端 | `static/` | 队友 | 单页仪表盘 |
+| 知识库构建 | `backend/rag/documents/` | **ZhuY（本人）** | schema、来源字段、版本管理 |
+| 混合检索 / 拒答 / 分块 | `backend/rag/` | **ZhuY（本人）** | 打分权重、阈值标定、缓存回放 |
+| 评测体系 | `backend/evaluation/` | **ZhuY（本人）** | 数据集、指标、分层、冻结锁 |
+| CI | `.github/workflows/` | **ZhuY（本人）** | 质量门禁 + 回放 job |
+| Agent 编排 | `backend/agents/`、`backend/tools/` | ChenH | LangGraph 图、JSON 计划解析、工具层 |
+| 预测与数据引擎 | `backend/engine.py`、`backend/realtime.py` | LiangK | 随机森林预测、告警、季节/相关性 |
+| 前端与产品 | `static/`、产品文档 | WuS | 仪表盘、问卷、竞品、可用性 |
+| 集成部署与治理 | `docker-compose.yml`、启动器 | ChenT | FastAPI 接入、Docker、release |
 
 ## 三、一次问答的数据流
 
